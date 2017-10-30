@@ -1,0 +1,208 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Imaginacion",
+		"_postman_id": "454ab7f2-5797-5b35-b180-9f2cb9d6eff6",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post create Client",
+			"request": {
+				"url": "http://localhost:8080/imaginacion/private/client",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Client 4\",\n\t\"age\": 55,\n\t\"document\": \"D001\",\n\t\"mail\": \"client4@business1.com\",\n\t\"login\": \"client3\",\n\t\"password\": \"client1345\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Client by Id",
+			"request": {
+				"url": "http://localhost:8080/imaginacion/private/client/idClient/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Put modify Client",
+			"request": {
+				"url": "http://localhost:8080/imaginacion/private/client",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"idClient\": 1,\n\t\"name\": \"Client 1\",\n\t\"age\": 40,\n\t\"document\": \"D001\",\n\t\"mail\": \"client1@business1.com\",\n\t\"login\": \"client1\",\n\t\"password\": \"client1123\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Cliente",
+			"request": {
+				"url": "http://localhost:8080/imaginacion/private/client/idClient/3",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Login",
+			"request": {
+				"url": "http://localhost:8080/imaginacion/private/client/login/client1/password/client1123",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Post create Product",
+			"request": {
+				"url": "http://localhost:8080/imaginacion/private/product",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Laptop dual core\",\n\t\"description\": \"Laptop dual core ZZZ\",\n\t\"price\": 500,\n\t\"barCode\": \"IUTPSJVNMA\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Post create Store",
+			"request": {
+				"url": "http://localhost:8080/imaginacion/private/store",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Store big avenue\",\n\t\"horary\": \"8am-8pm\",\n\t\"address\": \"Big Avenue VVV\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product by Id",
+			"request": {
+				"url": "http://localhost:8080/imaginacion/private/product/idProduct/3",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Put modify Product",
+			"request": {
+				"url": "http://localhost:8080/imaginacion/private/product",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"idProduct\": 3,\n\t\"name\": \"Laptop dual core\",\n\t\"description\": \"Laptop dual core ZZZ\",\n\t\"price\": 400,\n\t\"barCode\": \"IUTPSJVNMA\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"url": "http://localhost:8080/imaginacion/private/product/idProduct/3",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Store by Id",
+			"request": {
+				"url": "http://localhost:8080/imaginacion/private/store/idStore/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Put modify Store",
+			"request": {
+				"url": "http://localhost:8080/imaginacion/private/store",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"idStore\": 3,\n    \"name\": \"Store big avenue 2\",\n    \"horary\": \"8am-10pm\",\n    \"address\": \"Big Avenue BBB\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Store",
+			"request": {
+				"url": "http://localhost:8080/imaginacion/private/store/idStore/3",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
