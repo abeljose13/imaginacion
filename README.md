@@ -1,4 +1,4 @@
-# imaginacion
+# imaginación
 Demo project 
 
 - Entorno de desarrollo:
